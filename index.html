@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dương Tường Anh | Digital Portfolio</title>
+  <meta name="description" content="Hồ sơ năng lực cá nhân của Dương Tường Anh - Sinh viên Khoa Ngôn ngữ và Văn hóa Hàn Quốc tại Đại học Ngoại ngữ - ĐHQGHN">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient floating blobs background -->
+  <div class="ambient-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- FLOATING NAVIGATION HEADER -->
+  <header class="fixed-header" id="mainHeader">
+    <a href="#" class="nav-brand" id="logoLink">
+      <span class="logo-signature">Tường Anh</span>
+    </a>
+    
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+    
+    <nav class="nav-menu" id="navMenu">
+      <a class="nav-item active" data-target="home">Giới thiệu</a>
+      <a class="nav-item" data-target="assignments">Bài tập thực hành</a>
+      <a class="nav-item" data-target="conclusion">Tổng kết</a>
+      <a class="nav-item" data-target="contact">Liên hệ</a>
+      <button class="nav-item btn-shimmer" id="printPdfBtn" style="background: var(--color-carousel-pink); color: var(--color-atlantic); border-color: rgba(128, 158, 194, 0.4); font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer; border: 1px solid rgba(128, 158, 194, 0.4);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:2px;">
+          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+          <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+        Lưu PDF
+      </button>
+    </nav>
+  </header>
+
+  <!-- MAIN WRAPPER -->
+  <main class="app-container">
+
+    <!-- 1. HOME / ABOUT SECTION -->
+    <section id="home" class="page-section active">
+      <div class="glass-card">
+        <div class="home-layout">
+          
+          <!-- Left info column -->
+          <div class="bio-panel">
+            <div class="student-tag" style="position: relative;">
+              <!-- Cute tracking cat -->
+              <div class="cute-cat" id="cuteCat">
+                <!-- Chat Bubble -->
+                <div class="cat-bubble" id="catBubble">Meo meo~</div>
+                <div class="cat-ears">
+                  <div class="cat-ear left-ear"></div>
+                  <div class="cat-ear right-ear"></div>
+                </div>
+                <div class="cat-head">
+                  <div class="cat-eye left-eye">
+                    <div class="cat-pupil" id="pupilLeft"></div>
+                  </div>
+                  <div class="cat-eye right-eye">
+                    <div class="cat-pupil" id="pupilRight"></div>
+                  </div>
+                  <div class="cat-nose"></div>
+                </div>
+              </div>
+              <span class="pulse-dot"></span>
+              <span>Trường Đại học Ngoại ngữ - ĐHQGHN</span>
+            </div>
+            
+            <h1 class="hero-name">Dương Tường Anh</h1>
+            
+            <div class="role-typing">
+              <span id="typedText"></span><span class="caret">|</span>
+            </div>
+            
+            <p class="bio-paragraph">
+              Chào mừng bạn đến với Digital Portfolio của mình! Đây là nơi mình lưu trữ toàn bộ các sản phẩm thực hành dự án cá nhân được thiết kế nhằm tổng hợp và thể hiện kiến thức, kỹ năng số đã học được từ môn <strong>"Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo"</strong>. Danh mục này không chỉ là một tập tài liệu lưu trữ mà còn là minh chứng cho quá trình phát triển tư duy làm chủ công nghệ của bản thân.
+            </p>
+            
+            <div class="info-block-grid">
+              <div class="info-block reveal">
+                <span class="info-label">Họ và tên</span>
+                <span class="info-val">Dương Tường Anh</span>
+              </div>
+              <div class="info-block reveal">
+                <span class="info-label">Mã sinh viên</span>
+                <span class="info-val">25042327</span>
+              </div>
+              <div class="info-block reveal">
+                <span class="info-label">Khoa đào tạo</span>
+                <span class="info-val">Ngôn ngữ và Văn hóa Hàn Quốc</span>
+              </div>
+              <div class="info-block reveal">
+                <span class="info-label">Tên dự án</span>
+                <span class="info-val">Bài tập dự án cá nhân (Portfolio)</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right Photo column (Polaroid style) -->
+          <div>
+            <div class="profile-polaroid reveal">
+              <div class="polaroid-photo-frame">
+                <img src="avatar.png" alt="Dương Tường Anh" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              </div>
+              <div class="profile-social-links">
+                <a href="https://www.facebook.com/duong.432/" target="_blank" class="social-icon-link" aria-label="Facebook">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="https://www.instagram.com/wjjhn_wo/" target="_blank" class="social-icon-link" aria-label="Instagram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ASSIGNMENTS SECTION -->
+    <section id="assignments" class="page-section">
+      <div class="assign-grid">
+        
+        <!-- Sidebar Navigation Buttons -->
+        <aside class="assign-sidebar-menu">
+          <h4 class="sidebar-heading">Danh sách bài tập</h4>
+          <button class="assign-card-btn active" data-index="1">
+            <span class="btn-num">Bài tập 1</span>
+            <strong>Thao tác tệp & thư mục</strong>
+          </button>
+          <button class="assign-card-btn" data-index="2">
+            <span class="btn-num">Bài tập 2</span>
+            <strong>Đánh giá học thuật</strong>
+          </button>
+          <button class="assign-card-btn" data-index="3">
+            <span class="btn-num">Bài tập 3</span>
+            <strong>Kỹ nghệ Prompt học tập</strong>
+          </button>
+          <button class="assign-card-btn" data-index="4">
+            <span class="btn-num">Bài tập 4</span>
+            <strong>Cộng tác trực tuyến nhóm</strong>
+          </button>
+          <button class="assign-card-btn" data-index="5">
+            <span class="btn-num">Bài tập 5</span>
+            <strong>Sáng tạo nội dung số</strong>
+          </button>
+          <button class="assign-card-btn" data-index="6">
+            <span class="btn-num">Bài tập 6</span>
+            <strong>Sử dụng AI có trách nhiệm</strong>
+          </button>
+        </aside>
+        
+        <!-- Content Pane -->
+        <div class="glass-card assign-content-area">
+          
+          <!-- ==================== BÀI 1 ==================== -->
+          <div class="panel-container active" id="assign-panel-1">
+            <div class="panel-header">
+              <span class="panel-tag">Thực hành kỹ năng số cơ bản</span>
+              <h2 class="panel-title">Bài 1: Thao tác cơ bản với tệp tin và thư mục</h2>
+            </div>
+            
+            <a href="https://drive.google.com/drive/folders/1fdQJ01KVk9VO70laGBO4m7Bb3dwI3YPc?usp=sharing" class="btn-download-pdf btn-shimmer" target="_blank">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              Xem Thư Mục Báo Cáo & Bài Tập (Google Drive)
+            </a>
+
+            <h3 class="panel-subtitle reveal">1. Quy tắc đặt tên gọn gàng</h3>
+            <p class="panel-text">
+              Để máy tính luôn được sắp xếp một cách gọn gàng và không bao giờ lo bị mất hoặc không tìm thấy file, mình đã áp dụng các quy tắc đặt tên bài bản như sau:
+            </p>
+            <ul class="panel-ul-list reveal">
+              <li><strong>Sử dụng PascalCase và Underscore:</strong> Thư mục gốc được đặt tên là <code class="highlight-text">ThucHanh_DuongTuongAnh</code> sẽ giúp việc định danh sinh viên trở nên rõ ràng hơn trên hệ thống.</li>
+              <li><strong>Tính mô tả cao:</strong> Đổi tên tệp nháp từ <code class="highlight-text">GhiChu.txt</code> thành <code class="highlight-text">GhiChuQuanTrong.txt</code> để thể hiện rõ mức độ ưu tiên. Tệp cần luân chuyển được gọi là <code class="highlight-text">DiChuyen.txt</code>.</li>
+              <li><strong>Viết tiếng Việt không dấu:</strong> Hạn chế tối đa khoảng trắng và các ký tự đặc biệt nhằm đảm bảo tương thích mượt mà trên mọi hệ điều hành.</li>
+            </ul>
+
+            <h3 class="panel-subtitle reveal">2. Quy trình 12 bước thực hành tiêu chuẩn</h3>
+            <p class="panel-text">
+              Nhấp vào các nút bên dưới để xem chi tiết cách mình thực hiện từng bước trong quy trình 12 bước thực hành tiêu chuẩn:
+            </p>
+            
+            <!-- Interactive Step Dashboard -->
+            <div class="steps-dashboard reveal">
+              <div class="steps-scroller">
+                <button class="step-pill active" data-step="1">1</button>
+                <button class="step-pill" data-step="2">2</button>
+                <button class="step-pill" data-step="3">3</button>
+                <button class="step-pill" data-step="4">4</button>
+                <button class="step-pill" data-step="5">5</button>
+                <button class="step-pill" data-step="6">6</button>
+                <button class="step-pill" data-step="7">7</button>
+                <button class="step-pill" data-step="8">8</button>
+                <button class="step-pill" data-step="9">9</button>
+                <button class="step-pill" data-step="10">10</button>
+                <button class="step-pill" data-step="11">11</button>
+                <button class="step-pill" data-step="12">12</button>
+              </div>
+              
+              <div class="step-detail-card">
+                <div class="step-detail-num" id="stepDetailNum">#1 Mở File Explorer nhanh</div>
+                <h4 class="step-detail-title" id="stepDetailTitle">Bước 1: Mở File Explorer nhanh</h4>
+                <p class="step-detail-desc" id="stepDetailDesc">
+                  Mình mở trình quản lý file bằng tổ hợp phím tắt nhanh Windows + E hoặc bấm trực tiếp vào biểu tượng thư mục màu vàng quen thuộc trên thanh Taskbar.
+                </p>
+              </div>
+            </div>
+
+            <h3 class="panel-subtitle reveal">3. Trình duyệt Thư mục & Tệp tin tương tác</h3>
+            <p class="panel-text">
+              Dưới đây là bản báo cáo và các bước thực hiện được mình sắp xếp theo từng bước đầy đủ. Bạn có thể tương tác trực tiếp bằng cách bấm vào các tệp để xem giả lập hoặc click nút thao tác nhanh:
+            </p>
+            
+            <!-- Folder Explorer Simulator Interface -->
+            <div class="explorer-ui reveal">
+              <div class="explorer-sidebar">
+                <div class="explorer-sidebar-title">Ổ đĩa (E:)</div>
+                
+                <div class="exp-node">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px; vertical-align:middle; color:var(--color-wedgwood);"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                  <strong>Ổ đĩa (E:)</strong>
+                </div>
+                <div class="exp-sub-group">
+                  <div class="exp-node">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px; vertical-align:middle; color:var(--color-wedgwood);"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    <strong class="highlight-text">ThucHanh_DuongTuongAnh</strong>
+                  </div>
+                  <div class="exp-sub-group" id="virtualTreeContent">
+                    <!-- Javascript renders file tree here -->
+                  </div>
+                </div>
+              </div>
+              
+              <div class="explorer-body">
+                <div class="exp-viewer-title">Trình xem file văn bản (.txt)</div>
+                <div class="exp-viewer-window" id="virtualViewer">
+// Nhấp vào một tệp tin (.txt) ở nhánh thư mục bên trái để xem trước nội dung bên trong...
+                </div>
+                
+                <div class="exp-toolbar">
+                  <button class="exp-btn" id="expCopy">Copy Ghi Chú vào TaiLieu</button>
+                  <button class="exp-btn" id="expMove">Di chuyển DiChuyen.txt</button>
+                  <button class="exp-btn exp-btn-danger" id="expDelete">Xóa tệp nháp</button>
+                  <button class="exp-btn" id="expReset" style="border-color:var(--color-sky-blue);">Reset Explorer</button>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="panel-subtitle reveal">4. Tóm tắt phân loại kỹ thuật tệp tin</h3>
+            <div class="prompt-deck reveal">
+              <div class="prompt-designer-card">
+                <div class="p-header-tag advanced">Sao chép & Di chuyển</div>
+                <p class="panel-text" style="font-size:0.85rem; margin:0;">
+                  Tệp <code class="highlight-text">GhiChuQuanTrong.txt</code> được sao chép (Copy) vào thư mục <code class="highlight-text">TaiLieu</code> để làm bản lưu dự phòng. Tệp <code class="highlight-text">DiChuyen.txt</code> được chuyển hẳn (Cut) từ thư mục gốc bên ngoài vào thư mục con cho gọn gàng.
+                </p>
+              </div>
+              
+              <div class="prompt-designer-card">
+                <div class="p-header-tag basic">Xóa bỏ & Khôi phục</div>
+                <p class="panel-text" style="font-size:0.85rem; margin:0;">
+                  Sử dụng tổ hợp phím <code class="highlight-text">Shift + Delete</code> để dọn dẹp triệt để tệp nháp dư thừa. Đồng thời, tớ cũng thực hiện khôi phục (Restore) thành công tệp quan trọng từ Recycle Bin (Thùng rác).
+                </p>
+              </div>
+            </div>
+
+            <h3 class="panel-subtitle reveal">5. Ý nghĩa thực tiễn đối với Biên - Phiên dịch viên</h3>
+            <p class="panel-text reveal">
+              Đối với một biên dịch viên tương lai, việc làm chủ kỹ năng quản lý tệp tin không chỉ giúp máy tính gọn gàng mà là yếu tố sống còn để quản lý dự án dịch thuật. Khi dịch một tài liệu, tớ phải quản lý rất nhiều định dạng tệp: tệp văn bản gốc, tệp dịch thô, bản hiệu đính (Proofread), các tệp bộ nhớ dịch thuật (<code class="highlight-text">.tmx</code>) và cơ sở dữ liệu thuật ngữ (<code class="highlight-text">.tb</code>). Việc tổ chức cấu trúc thư mục rõ ràng và chuẩn hóa đặt tên tệp giúp ngăn ngừa tuyệt đối lỗi gửi nhầm bản nháp cho khách hàng — một sai lầm bảo mật nghiêm trọng trong ngành dịch thuật chuyên nghiệp.
+            </p>
+          </div>
+
+          <!-- ==================== BÀI 2 ==================== -->
+          <div class="panel-container" id="assign-panel-2">
+            <div class="panel-header">
+              <span class="panel-tag">Nghiên cứu & Khai thác học thuật số</span>
+              <h2 class="panel-title">Bài 2: Tìm kiếm và đánh giá thông tin học thuật</h2>
+            </div>
+            
+            <a href="https://drive.google.com/drive/folders/1fdQJ01KVk9VO70laGBO4m7Bb3dwI3YPc?usp=sharing" class="btn-download-pdf btn-shimmer" target="_blank">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              Xem Thư Mục Báo Cáo & Bài Tập (Google Drive)
+            </a>
+            
+            <p class="panel-text">
+              <strong>Chủ đề nghiên cứu thực tế:</strong> <span class="highlight-text">"Tác động của Trí tuệ Nhân tạo (AI) đối với quá trình tự học và phát triển năng lực của sinh viên đại học"</span>.
+            </p>
+
+            <h3 class="panel-subtitle reveal">1. Chiến lược tìm kiếm & Toán tử nâng cao (Từ Báo cáo thật)</h3>
+            <p class="panel-text">
+              Các cấu trúc thành phần toán tử tìm kiếm logic đa lớp mà tớ đã sử dụng trên trên Google Scholar:
+            </p>
+            <ul class="panel-ul-list reveal" style="margin-bottom:20px;">
+              <li><strong>Lớp Công cụ (AI):</strong> <code class="highlight-text">("Artificial Intelligence" OR "ChatGPT")</code></li>
+              <li><strong>Lớp Môi trường (Higher Education):</strong> <code class="highlight-text">("Higher Education" OR "University")</code></li>
+              <li><strong>Lớp Tác vụ (Self-study):</strong> <code class="highlight-text">("Self-study" OR "Academic development")</code></li>
+            </ul>
+            <div style="background:#fafbfc; border:1px solid var(--border-color); padding:18px; border-radius:16px; margin-bottom:25px; display: flex; flex-direction: column; gap: 14px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 15px; overflow-x: auto;">
+                <div style="flex-grow: 1;">
+                  <strong style="font-size:0.8rem; color:var(--text-muted); display:block; margin-bottom:4px; white-space: nowrap;">Query Tiếng Anh (Google Scholar):</strong>
+                  <code id="queryEng" style="font-family:monospace; color:var(--color-atlantic); font-size:0.82rem; word-break:break-all; font-weight:700;">("Artificial Intelligence" OR "ChatGPT") AND ("Higher Education" OR "University") AND ("Self-study" OR "Academic development")</code>
+                </div>
+                <button class="exp-btn" onclick="copyQueryText('queryEng', this)" style="flex-shrink: 0; padding: 6px 12px; font-size: 0.72rem; border-color: var(--color-sky-blue); display: flex; align-items: center; gap: 6px;">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  Sao chép
+                </button>
+              </div>
+              
+              <div style="border-top: 1px dashed var(--border-color); padding-top: 12px; display: flex; justify-content: space-between; align-items: center; gap: 15px; overflow-x: auto;">
+                <div style="flex-grow: 1;">
+                  <strong style="font-size:0.8rem; color:var(--text-muted); display:block; margin-bottom:4px; white-space: nowrap;">Query Tiếng Hàn (Cổng học thuật RISS / DBpia):</strong>
+                  <code id="queryKor" style="font-family:monospace; color:var(--color-atlantic); font-size:0.82rem; word-break:break-all; font-weight:700;">("인공지능" OR "AI") AND ("대학생" OR "대학교") AND ("자기주도학습" OR "학업 성취도")</code>
+                </div>
+                <button class="exp-btn" onclick="copyQueryText('queryKor', this)" style="flex-shrink: 0; padding: 6px 12px; font-size: 0.72rem; border-color: var(--color-sky-blue); display: flex; align-items: center; gap: 6px;">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  Sao chép
+                </button>
+              </div>
+            </div>
+            <ul class="panel-ul-list reveal">
+              <li><strong>Toán tử Ngoặc kép (""):</strong> Khóa chặt cụm từ chuyên môn không cho phép AI tự động biến đổi hoặc bóc tách (Ví dụ: <code class="highlight-text">"Artificial Intelligence"</code>).</li>
+              <li><strong>Toán tử OR:</strong> Mở rộng tối đa không gian tìm kiếm sang các từ đồng nghĩa để tránh sót các nghiên cứu quan trọng (Ví dụ: <code class="highlight-text">"Higher Education" OR "University"</code>).</li>
+              <li><strong>Toán tử AND:</strong> Buộc tất cả các kết quả trả về phải chứa đầy đủ 3 giao điểm chủ đề: Công cụ (AI) ∩ Môi trường (Đại học) ∩ Tác vụ ứng dụng (Tự học).</li>
+            </ul>
+
+            <h3 class="panel-subtitle reveal">2. Bảng Đánh giá học thuật các nguồn tài liệu</h3>
+            <p class="panel-text">
+              Lọc nhanh tài liệu tớ tìm được bằng các nút lọc bên dưới:
+            </p>
+            
+            <div class="acad-filters reveal">
+              <button class="acad-filter-btn active" data-acad="all">Tất cả (10)</button>
+              <button class="acad-filter-btn" data-acad="paper">Bài báo khoa học (8)</button>
+              <button class="acad-filter-btn" data-acad="book">Sách chuyên khảo (2)</button>
+            </div>
+            
+            <div class="acad-table-scroller reveal">
+              <table class="acad-table">
+                <thead>
+                  <tr>
+                    <th>Tài liệu / Tác giả</th>
+                    <th>Thể loại</th>
+                    <th>Cơ quan XB</th>
+                    <th>Độ tin cậy</th>
+                    <th>Đánh giá cốt lõi</th>
+                  </tr>
+                </thead>
+                <tbody id="acadTableBody">
+                  <tr data-acad-type="paper">
+                    <td><strong>Kim, H.R. (2020)</strong><br><span style="font-size:0.75rem; color:var(--text-muted);">Difficulties in translation of Korean literary texts</span></td>
+                    <td><span class="type-tag paper">Bài báo</span></td>
+                    <td>Russian Linguistic Bulletin</td>
+                    <td><span class="score-badge">5.0 / 5</span></td>
+                    <td>Tạp chí học thuật quốc tế, phân tích sâu yếu tố văn hóa và ngôn ngữ, có phương pháp nghiên cứu rõ ràng.</td>
+                  </tr>
+                  <tr data-acad-type="paper">
+                    <td><strong>Seo, J. & Kim, H. (2023)</strong><br><span style="font-size:0.75rem; color:var(--text-muted);">Human Interpretation and Machine Translation Errors</span></td>
+                    <td><span class="type-tag paper">Bài báo</span></td>
+                    <td>Korean Journal of English Linguistics</td>
+                    <td><span class="score-badge">5.0 / 5</span></td>
+                    <td>Nghiên cứu thực nghiệm, so sánh dịch máy và con người, dữ liệu cụ thể, tính ứng dụng cao.</td>
+                  </tr>
+                  <tr data-acad-type="paper">
+                    <td><strong>Lee, H. & Nam, W.J. (2018)</strong><br><span style="font-size:0.75rem; color:var(--text-muted);">The past and future of translation studies in South Korea</span></td>
+                    <td><span class="type-tag paper">Bài báo</span></td>
+                    <td>Perspectives</td>
+                    <td><span class="score-badge">4.5 / 5</span></td>
+                    <td>Bài tổng quan học thuật uy tín, phân tích xu hướng ngành, nhưng thiên về lý thuyết hơn thực nghiệm.</td>
+                  </tr>
+                  <tr data-acad-type="paper">
+                    <td><strong>Cho, S.E. (2006)</strong><br><span style="font-size:0.75rem; color:var(--text-muted);">Translator’s creativity in Japanese-Korean translation</span></td>
+                    <td><span class="type-tag paper">Bài báo</span></td>
+                    <td>Meta Journal</td>
+                    <td><span class="score-badge">4.5 / 5</span></td>
+                    <td>Tạp chí dịch thuật hàng đầu, nội dung có giá trị lý thuyết cao, nhưng nghiên cứu đã cũ.</td>
+                  </tr>
+                  <tr data-acad-type="paper">
+                    <td><strong>Eo, S. et al. (2022)</strong><br><span style="font-size:0.75rem; color:var(--text-muted);">QUAK: A dataset for Korean-English MT quality estimation</span></td>
+                    <td><span class="type-tag paper">Bài báo</span></td>
+                    <td>arXiv</td>
+                    <td><span class="score-badge">4.0 / 5</span></td>
+                    <td>Nghiên cứu mới về AI, có dữ liệu và phương pháp rõ ràng, nhưng chưa qua phản biện chính thức.</td>
+                  </tr>
+                  <tr data-acad-type="paper">
+                    <td><strong>Lee, D. et al. (2025)</strong><br><span style="font-size:0.75rem; color:var(--text-muted);">Beyond word-for-word translation in English-Korean pairs</span></td>
+                    <td><span class="type-tag paper">Bài báo</span></td>
+                    <td>arXiv</td>
+                    <td><span class="score-badge">4.0 / 5</span></td>
+                    <td>Nghiên cứu rất cập nhật về LLM, có đánh giá con người, nhưng độ tin cậy bị hạn chế do chưa peer-review.</td>
+                  </tr>
+                  <tr data-acad-type="paper">
+                    <td><strong>Pak, M.C. (2015)</strong><br><span style="font-size:0.75rem; color:var(--text-muted);">Phrase database approach in English-Korean MT</span></td>
+                    <td><span class="type-tag paper">Bài báo</span></td>
+                    <td>arXiv</td>
+                    <td><span class="score-badge">3.5 / 5</span></td>
+                    <td>Nghiên cứu nền tảng về dịch máy, nhưng đã cũ và công nghệ không còn mới.</td>
+                  </tr>
+                  <tr data-acad-type="book">
+                    <td><strong>Kang, J.H. & Wakabayashi, J. (2019)</strong><br><span style="font-size:0.75rem; color:var(--text-muted);">Translating and Interpreting in Korean Contexts</span></td>
+                    <td><span class="type-tag book">Sách</span></td>
+                    <td>Routledge</td>
+                    <td><span class="score-badge">5.0 / 5</span></td>
+                    <td>Nhà xuất bản quốc tế uy tín, nội dung hệ thống, được dùng rộng rãi trong nghiên cứu dịch thuật.</td>
+                  </tr>
+                  <tr data-acad-type="book">
+                    <td><strong>Kim, W.D. (2019)</strong><br><span style="font-size:0.75rem; color:var(--text-muted);">Translations in Korea: Theory and Practice</span></td>
+                    <td><span class="type-tag book">Sách</span></td>
+                    <td>Springer</td>
+                    <td><span class="score-badge">5.0 / 5</span></td>
+                    <td>Sách học thuật chất lượng cao, có thẩm định khoa học, nội dung toàn diện về dịch thuật Hàn Quốc.</td>
+                  </tr>
+                  <tr data-acad-type="paper">
+                    <td><strong>earticle (2023)</strong><br><span style="font-size:0.75rem; color:var(--text-muted);">Error analysis in Korean-Chinese interpretation using AI</span></td>
+                    <td><span class="type-tag paper">Bài báo</span></td>
+                    <td>earticle (CSDL Hàn Quốc)</td>
+                    <td><span class="score-badge">4.0 / 5</span></td>
+                    <td>Có dữ liệu thực nghiệm, phản ánh thực tiễn, nhưng độ uy tín phụ thuộc từng tạp chí cụ thể.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="panel-subtitle reveal">3. Phân tích chiều sâu về các nguồn tài liệu</h3>
+            <p class="panel-text">
+              Việc nhận diện ưu - nhược điểm của từng nhóm nguồn tài liệu giúp mình chắt lọc thông tin khách quan hơn:
+            </p>
+            <ul class="panel-ul-list reveal">
+              <li><strong>Tạp chí Khoa học:</strong>
+                <br><em>Ưu điểm:</em> Độ uy tín và khoa học rất cao nhờ quy trình phản biện nghiêm ngặt của giới chuyên môn, minh bạch về phương pháp nghiên cứu (như mô hình định lượng TAM, CFA).
+                <br><em>Hạn chế:</em> Kiến thức thiên về học thuật lý thuyết vĩ mô, cần thêm quá trình lập trình thực tế để ứng dụng vào hệ thống thực tiễn.
+              </li>
+              <li><strong>Sách chuyên ngành:</strong>
+                <br><em>Ưu điểm:</em> Cung cấp khung kiến thức hệ thống vững chắc, các mô hình thiết kế phần mềm được nghiên cứu bài bản, chuyên sâu.
+                <br><em>Hạn chế:</em> Chu kỳ biên soạn và xuất bản sách khá dài nên tính cập nhật về các công nghệ lập trình hay thuật toán AI mới thường chậm hơn.
+              </li>
+              <li><strong>Nguồn tài liệu mở & Pháp quy:</strong>
+                <br><em>Ưu điểm:</em> Sơ đồ hoạt động thực tế, phản ánh kịp thời xu hướng công nghệ số hóa phần mềm mới nhất, có định hướng pháp lý rõ ràng.
+                <br><em>Hạn chế:</em> Chất lượng thông tin không đồng đều, dễ lẫn các bài viết quảng cáo hoặc giới thiệu công cụ phần mềm chưa được kiểm định kỹ.
+              </li>
+            </ul>
+          </div>
+
+          <!-- ==================== BÀI 3 ==================== -->
+          <div class="panel-container" id="assign-panel-3">
+            <div class="panel-header">
+              <span class="panel-tag">Kỹ nghệ Câu lệnh thông minh</span>
+              <h2 class="panel-title">Bài 3: Viết Prompt hiệu quả cho các tác vụ học tập</h2>
+            </div>
+            
+            <a href="https://drive.google.com/drive/folders/1fdQJ01KVk9VO70laGBO4m7Bb3dwI3YPc?usp=sharing" class="btn-download-pdf btn-shimmer" target="_blank">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              Xem Thư Mục Báo Cáo & Bài Tập (Google Drive)
+            </a>
+            
+            <p class="panel-text">
+              Ứng dụng Prompt Engineering nâng cao để giải quyết 3 tác vụ học tập trọng điểm: <strong>Tóm tắt tài liệu</strong>, <strong>Giải thích khái niệm</strong> và <strong>Thiết lập bộ câu hỏi ôn tập</strong>.
+            </p>
+
+            <!-- Internal Tasks Tab Switcher -->
+            <div class="prompt-tabs-container reveal">
+              <button class="prompt-tab-btn active" data-task="1">Tóm tắt nghiên cứu</button>
+              <button class="prompt-tab-btn" data-task="2">Giải thích ngữ pháp</button>
+              <button class="prompt-tab-btn" data-task="3">Tạo câu hỏi ôn tập</button>
+            </div>
+
+            <!-- Tab Contents Wrapper -->
+            <div class="prompt-tab-contents">
+              
+              <!-- TÁC VỤ 1 -->
+              <div class="prompt-task-panel active" id="prompt-task-1">
+                <h3 class="panel-subtitle reveal">Tác vụ 1: Tóm tắt bài nghiên cứu</h3>
+                <div class="prompt-deck reveal">
+                  <div class="prompt-designer-card">
+                    <div class="p-header-tag basic">Prompt Cơ Bản</div>
+                    <div class="p-code-block">Hãy tóm tắt bài báo nghiên cứu dưới đây giúp tôi.</div>
+                  </div>
+                  <div class="prompt-designer-card">
+                    <div class="p-header-tag basic">Prompt Cải Tiến</div>
+                    <div class="p-code-block">Tóm tắt bài báo sau thành 3 phần: a. Mục tiêu, b. Phương pháp, c. Kết luận. Sử dụng từ ngữ học thuật, giới hạn trong khoảng 400 từ giúp tôi.</div>
+                  </div>
+                </div>
+                <div class="prompt-designer-card recommended reveal" style="margin-top:-10px; margin-bottom:15px;">
+                  <div class="p-header-tag advanced">Prompt Nâng Cao (Đề xuất)</div>
+                  <div class="p-code-block">Đóng vai nhà nghiên cứu cấp cao. Hãy tóm tắt bài báo sau theo các bước: trích xuất câu hỏi nghiên cứu, phân tích phương pháp, nêu ra 3 phát hiện quan trọng nhất và xác định mặt hạn chế. Tuyệt đối không tự ý bịa thêm dữ kiện ngoài. Nếu thiếu số liệu học thuật, hãy ghi 'Không có dữ liệu định lượng'.</div>
+                </div>
+              </div>
+
+              <!-- TÁC VỤ 2 -->
+              <div class="prompt-task-panel" id="prompt-task-2">
+                <h3 class="panel-subtitle reveal">Tác vụ 2: Giải thích khái niệm</h3>
+                <div class="prompt-deck reveal">
+                  <div class="prompt-designer-card">
+                    <div class="p-header-tag basic">Prompt Cơ Bản</div>
+                    <div class="p-code-block">Định ngữ trong ngữ pháp tiếng Hàn là gì?</div>
+                  </div>
+                  <div class="prompt-designer-card">
+                    <div class="p-header-tag basic">Prompt Cải Tiến</div>
+                    <div class="p-code-block">Hãy coi tôi là học sinh cấp 2 và giải thích định ngữ trong ngữ pháp tiếng. Bắt buộc kèm một ví dụ thực tế trong đời sống để minh họa giúp cho tôi dễ hiểu hơn.</div>
+                  </div>
+                </div>
+                <div class="prompt-designer-card recommended reveal" style="margin-top:-10px; margin-bottom:15px;">
+                  <div class="p-header-tag advanced">Prompt Nâng Cao (Đề xuất)</div>
+                  <div class="p-code-block">Đóng vai giáo viên dạy Tiếng Hàn. Hãy giải thích ngữ pháp định ngữ này thật đơn giản bằng một ví dụ sinh động. Sau đó, hãy đặt ra một tình huống thực tế mà tôi phải vận dụng kiến thức vừa học để giải quyết. Hãy đợi tôi đưa ra đáp án rồi giải thích và sửa lại lỗi sai của tôi.</div>
+                </div>
+              </div>
+
+              <!-- TÁC VỤ 3 -->
+              <div class="prompt-task-panel" id="prompt-task-3">
+                <h3 class="panel-subtitle reveal">Tác vụ 3: Tạo câu hỏi ôn tập</h3>
+                <div class="prompt-deck reveal">
+                  <div class="prompt-designer-card">
+                    <div class="p-header-tag basic">Prompt Cơ Bản</div>
+                    <div class="p-code-block">Tạo cho tôi 5 câu hỏi trắc nghiệm về định ngữ trong tiếng Hàn.</div>
+                  </div>
+                  <div class="prompt-designer-card">
+                    <div class="p-header-tag basic">Prompt Cải tiến</div>
+                    <div class="p-code-block">Tạo bộ câu hỏi trắc nghiệm vận dụng tình huống thực tế, tránh hỏi lý thuyết học vẹt. Cung cấp đáp án và giải thích chi tiết cho từng câu đúng sai.</div>
+                  </div>
+                </div>
+                <div class="prompt-designer-card recommended reveal" style="margin-top:-10px; margin-bottom:15px;">
+                  <div class="p-header-tag advanced">Prompt Nâng Cao (Đề xuất)</div>
+                  <div class="p-code-block">Đóng vai chuyên gia ra đề thi Tiếng Hàn. Hãy tạo bộ câu hỏi trắc nghiệm nâng dần mức độ khó từ Nhận biết, Thông hiểu đến Phân tích, Đánh giá (theo thang Bloom). Thiết kế các phương án nhiễu dựa trên những hiểu lầm phổ biến nhất của học sinh. Tuyệt đối không dùng phương án dễ dãi như 'Tất cả đều đúng'.</div>
+                </div>
+              </div>
+
+            </div>
+
+            <h3 class="panel-subtitle reveal">4. Bảng so sánh hiệu quả của các PROMPT</h3>
+            <div class="matrix-wrapper reveal">
+              <table class="matrix-table">
+                <thead>
+                  <tr>
+                    <th>Tiêu Chí</th>
+                    <th>Prompt Cơ Bản</th>
+                    <th>Prompt Nâng Cao</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Độ Sâu Nội Dung</strong></td>
+                    <td>Hời hợt, dễ bỏ sót số liệu và phương pháp luận quan trọng.</td>
+                    <td>Phân tích hệ thống, nổi bật các số liệu trọng yếu và hạn chế rủi ro.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Độ Tương Tác</strong></td>
+                    <td>Cung cấp thông tin một chiều, đôi khi gây quá tải thuật ngữ.</td>
+                    <td>Tạo đối thoại hai chiều, liên tục kiểm tra mức độ hiểu của người dùng.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Tính Chính Xác</strong></td>
+                    <td>Nguy cơ "ảo giác" (bịa đặt thông tin) rất cao.</td>
+                    <td>Độ tin cậy cao, AI tự động từ chối nếu thiếu dữ kiện đầu vào.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Kiểm Tra Nhận Thức</strong></td>
+                    <td>Chỉ tạo ra câu hỏi học vẹt, phương án nhiễu quá dễ đoán.</td>
+                    <td>Phân bổ câu hỏi đa dạng (thang Bloom), đáp án nhiễu đánh lừa tốt.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="panel-subtitle reveal">5. Nguyên tắc cốt lõi và Ranh giới An toàn</h3>
+            <p class="panel-text">
+              Bên cạnh khu vực C.R.E.A.T.E, mình luôn chú trọng thiết lập ranh giới an toàn để quản lý rủi ro sai lệch thông tin của AI:
+            </p>
+            <ul class="panel-ul-list reveal">
+              <li><strong>Rõ ràng & Đặc tả:</strong> Không để lại điểm tối nghĩa. Yêu cầu rõ định dạng, độ dài và giọng văn mong muốn.</li>
+              <li><strong>Tư duy theo bước (Chain-of-Thought):</strong> Thay vì bắt AI làm một nhiệm vụ lớn ngay lập tức, hãy hướng dẫn chia nhỏ thành các bước suy luận logic rõ ràng.</li>
+              <li><strong>Thiết lập ranh giới an toàn:</strong> Luôn chèn lệnh phòng ngừa ảo giác: <em>"Nếu không có thông tin học thuật xác thực, hãy trả lời là tôi không biết, tuyệt đối không bịa đặt."</em></li>
+            </ul>
+          </div>
+
+          <!-- ==================== BÀI 4 ==================== -->
+          <div class="panel-container" id="assign-panel-4">
+            <div class="panel-header">
+              <span class="panel-tag">Làm việc nhóm số & Cộng tác đám mây</span>
+              <h2 class="panel-title">Bài 4: Hợp tác trực tuyến trong dự án nhóm</h2>
+            </div>
+            
+            <a href="https://drive.google.com/drive/folders/1fdQJ01KVk9VO70laGBO4m7Bb3dwI3YPc?usp=sharing" class="btn-download-pdf btn-shimmer" target="_blank">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              Xem Thư Mục Báo Cáo & Bài Tập (Google Drive)
+            </a>
+            
+            <p class="panel-text">
+              <strong>Dự án nhóm thực hành:</strong> <span class="highlight-text">"Ứng dụng AI trong học ngoại ngữ"</span>.
+              <br><strong>Vai trò cá nhân:</strong> Quản lý tiến độ, tổ chức lưu trữ và biên tập tài liệu.
+            </p>
+
+            <h3 class="panel-subtitle reveal">1. Thiết lập hệ sinh thái công cụ quản lý dự án nhóm</h3>
+            <p class="panel-text">
+              Trong học phần Nhập môn Công nghệ số, nhóm chúng mình đã triển khai làm bài tập đánh giá giữa kỳ. Dự án diễn ra trong gói gọn 01 tuần với các giai đoạn: thiết lập bảng kế hoạch phân công công việc, thu thập dữ liệu, phân tích số liệu, viết nội dung và hoàn thiện sản phẩm thuyết trình.
+            </p>
+
+            <div class="gantt-container reveal" style="margin: 25px 0; background: var(--bg-card-solid); border: 1.5px solid var(--border-color); border-radius: 20px; padding: 24px; box-shadow: var(--shadow-sm); overflow-x: auto;">
+              <h4 style="font-size: 0.85rem; font-weight: 800; color: var(--color-atlantic); margin-top: 0; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 8px; min-width: 450px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-sky-blue);"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                Lịch trình tiến độ dự án nhóm (01 Tuần)
+              </h4>
+              
+              <div class="gantt-chart" style="display: flex; flex-direction: column; gap: 14px; min-width: 450px;">
+                <!-- Row 1 -->
+                <div class="gantt-row" style="display: flex; align-items: center; gap: 16px;">
+                  <div style="width: 90px; font-size: 0.75rem; font-weight: 800; color: var(--color-atlantic); flex-shrink: 0;">Ngày 1</div>
+                  <div style="flex-grow: 1; background: var(--bg-card-accent); height: 26px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); position: relative;">
+                    <div style="width: 100%; background: var(--color-sky-blue); height: 100%; display: flex; align-items: center; padding-left: 12px; box-sizing: border-box;">
+                      <span style="font-size: 0.7rem; font-weight: 800; color: #ffffff; white-space: nowrap;">Lập kế hoạch & Phân công nhiệm vụ (Teams)</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="gantt-row" style="display: flex; align-items: center; gap: 16px;">
+                  <div style="width: 90px; font-size: 0.75rem; font-weight: 800; color: var(--color-atlantic); flex-shrink: 0;">Ngày 2 - 3</div>
+                  <div style="flex-grow: 1; background: var(--bg-card-accent); height: 26px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); position: relative;">
+                    <div style="width: 100%; background: var(--color-wedgwood); height: 100%; display: flex; align-items: center; padding-left: 12px; box-sizing: border-box;">
+                      <span style="font-size: 0.7rem; font-weight: 800; color: #ffffff; white-space: nowrap;">Tìm kiếm tài liệu & Đánh giá nguồn lực (Scholar & Drive)</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Row 3 -->
+                <div class="gantt-row" style="display: flex; align-items: center; gap: 16px;">
+                  <div style="width: 90px; font-size: 0.75rem; font-weight: 800; color: var(--color-atlantic); flex-shrink: 0;">Ngày 4 - 5</div>
+                  <div style="flex-grow: 1; background: var(--bg-card-accent); height: 26px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); position: relative;">
+                    <div style="width: 100%; background: var(--color-atlantic); height: 100%; display: flex; align-items: center; padding-left: 12px; box-sizing: border-box;">
+                      <span style="font-size: 0.7rem; font-weight: 800; color: #ffffff; white-space: nowrap;">Biên dịch song ngữ & Soát lỗi chính tả (Docs & Zalo)</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Row 4 -->
+                <div class="gantt-row" style="display: flex; align-items: center; gap: 16px;">
+                  <div style="width: 90px; font-size: 0.75rem; font-weight: 800; color: var(--color-atlantic); flex-shrink: 0;">Ngày 6 - 7</div>
+                  <div style="flex-grow: 1; background: var(--bg-card-accent); height: 26px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); position: relative;">
+                    <div style="width: 100%; background: linear-gradient(135deg, var(--color-sky-blue), var(--color-wedgwood)); height: 100%; display: flex; align-items: center; padding-left: 12px; box-sizing: border-box;">
+                      <span style="font-size: 0.7rem; font-weight: 800; color: #ffffff; white-space: nowrap;">Thiết kế ấn phẩm trình chiếu & Thuyết trình (Canva)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tool-grid reveal">
+              <div class="tool-ui-card">
+                <div class="tool-ui-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24" fill="#6264A7"> 
+                    <path d="M9.186 4.797a2.42 2.42 0 1 0-2.86-2.448h1.178c.929 0 1.682.753 1.682 1.682zm-4.295 7.738h2.613c.929 0 1.682-.753 1.682-1.682V5.58h2.783a.7.7 0 0 1 .682.716v4.294a4.197 4.197 0 0 1-4.093 4.293c-1.618-.04-3-.99-3.667-2.35Zm10.737-9.372a1.674 1.674 0 1 1-3.349 0 1.674 1.674 0 0 1 3.349 0m-2.238 9.488-.12-.002a5.2 5.2 0 0 0 .381-2.07V6.306a1.7 1.7 0 0 0-.15-.725h1.792c.39 0 .707.317.707.707v3.765a2.6 2.6 0 0 1-2.598 2.598z"/> 
+                    <path d="M.682 3.349h6.822c.377 0 .682.305.682.682v6.822a.68.68 0 0 1-.682.682H.682A.68.68 0 0 1 0 10.853V4.03c0-.377.305-.682.682-.682Zm5.206 2.596v-.72h-3.59v.72h1.357V9.66h.87V5.945z"/> 
+                  </svg>
+                </div>
+                <h4 class="tool-ui-name">Microsoft Teams</h4>
+                <p class="tool-ui-desc">Hệ thống quản lý tác vụ (Task Management) và giao tiếp bất đồng bộ chính thức.</p>
+              </div>
+              <div class="tool-ui-card">
+                <div class="tool-ui-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#00897B">
+                    <path d="M5.53 2.13 0 7.75h5.53zm.398 0v5.62h7.608v3.65l5.47-4.45c-.014-1.22.031-2.25-.025-3.46-.148-1.09-1.287-1.47-2.236-1.36zM23.1 4.32c-.802.295-1.358.995-2.047 1.49-2.506 2.05-4.982 4.12-7.468 6.19 3.025 2.59 6.04 5.18 9.065 7.76 1.218.671 1.428-.814 1.328-1.64v-13a.828.828 0 0 0-.877-.825zM.038 8.15v7.7h5.53v-7.7zm13.577 8.1H6.008v5.62c3.864-.006 7.737.011 11.58-.009 1.02-.07 1.618-1.12 1.468-2.07v-2.51l-5.47-4.68v3.65zm-13.577 0c.02 1.44-.041 2.88.033 4.31.162.948 1.158 1.43 2.047 1.31h3.464v-5.62z"/>
+                  </svg>
+                </div>
+                <h4 class="tool-ui-name">Google Meet</h4>
+                <p class="tool-ui-desc">Hệ thống hội thoại trực tuyến đồng bộ, phục vụ họp nhóm, brainstorm ý tưởng và nghiệm thu tiến độ theo thời gian thực.</p>
+              </div>
+              <div class="tool-ui-card">
+                <div class="tool-ui-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#0068FF">
+                    <path d="M12.49 10.2722v-.4496h1.3467v6.3218h-.7704a.576.576 0 01-.5763-.5729l-.0006.0005a3.273 3.273 0 01-1.9372.6321c-1.8138 0-3.2844-1.4697-3.2844-3.2823 0-1.8125 1.4706-3.2822 3.2844-3.2822a3.273 3.273 0 011.9372.6321l.0006.0005zM6.9188 7.7896v.205c0 .3823-.051.6944-.2995 1.0605l-.03.0343c-.0542.0615-.1815.206-.2421.2843L2.024 14.8h4.8948v.7682a.5764.5764 0 01-.5767.5761H0v-.3622c0-.4436.1102-.6414.2495-.8476L4.8582 9.23H.1922V7.7896h6.7266zm8.5513 8.3548a.4805.4805 0 01-.4803-.4798v-7.875h1.4416v8.3548H15.47zM20.6934 9.6C22.52 9.6 24 11.0807 24 12.9044c0 1.8252-1.4801 3.306-3.3066 3.306-1.8264 0-3.3066-1.4808-3.3066-3.306 0-1.8237 1.4802-3.3044 3.3066-3.3044zm-10.1412 5.253c1.0675 0 1.9324-.8645 1.9324-1.9312 0-1.065-.865-1.9295-1.9324-1.9295s-1.9324.8644-1.9324 1.9295c0 1.0667.865 1.9312 1.9324 1.9312zm10.1412-.0033c1.0737 0 1.945-.8707 1.945-1.9453 0-1.073-.8713-1.9436-1.945-1.9436-1.0753 0-1.945.8706-1.945 1.9436 0 1.0746.8697 1.9453 1.945 1.9453z"/>
+                  </svg>
+                </div>
+                <h4 class="tool-ui-name">Zalo Cloud & Docs</h4>
+                <p class="tool-ui-desc">Hệ thống lưu trữ, phân loại nhanh và chia sẻ tài nguyên dự án trực tiếp của cả đội.</p>
+              </div>
+            </div>
+
+            <h3 class="panel-subtitle reveal">2. Tích hợp tính năng nâng cao và Tối ưu hóa quy trình</h3>
+            <ul class="panel-ul-list reveal">
+              <li><strong>Định danh chuyên nghiệp:</strong> Đồng bộ ảnh đại diện và đặt tên hiển thị dạng <code class="highlight-text">[Họ tên] - [MSV]</code> trên Teams, Google Docs và Zalo nhằm tối ưu hóa việc theo vết tương tác.</li>
+              <li><strong>Cấu hình Microsoft Teams:</strong> Chia nhỏ thành 3 kênh chuyên trách (Phân việc, Nội dung, Tổng kết); sử dụng thẻ màu (Đỏ/Vàng/Xanh) để phân loại độ khẩn cấp và dùng <code class="highlight-text">@tag</code> để điều phối thông tin nhanh.</li>
+              <li><strong>Tối ưu hóa Zalo:</strong> Ghim các liên kết quan trọng, phân loại tài liệu bằng thẻ màu (như "Dự án ULIS") và nhúng trực tiếp link Google Docs vào mô tả nhóm để cả đội truy cập nhanh.</li>
+            </ul>
+
+            <h3 class="panel-subtitle reveal">3. Đề xuất giải pháp cho các thách thức phối hợp nhóm</h3>
+            <p class="panel-text">
+              Khi làm việc nhóm không tránh khỏi những lúc bất đồng ý kiến hoặc gặp xung đột, nhóm mình đã khắc phục bằng các giải pháp số:
+            </p>
+            <div class="accordion-container reveal">
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span>Thách thức 1: Lệch nhịp giao tiếp bất đồng bộ trên Teams</span>
+                  <span class="accordion-icon">＋</span>
+                </button>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <p><strong>Thách thức:</strong> Khác biệt lịch học cá nhân khiến việc duyệt khung đề cương giữa các thành viên bị trễ 5–6 tiếng, làm gián đoạn tiến trình viết bài cá nhân.</p>
+                    <p><strong>Giải pháp công nghệ:</strong> Áp dụng Quy tắc phản hồi thông tin (SLA nội bộ): Các đầu việc khẩn cấp (High Priority) cần được tag và phản hồi trong vòng 6 tiếng ban ngày; nếu quá hạn, chủ động gọi điện trực tiếp qua <strong>Microsoft Teams</strong> để giải quyết ngay.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span>Thách thức 2: Quá tải thông tin (Information Overload)</span>
+                  <span class="accordion-icon">＋</span>
+                </button>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <p><strong>Thách thức:</strong> Thông báo dồn dập từ Zalo và Teams gây phân tâm trong giờ tự học cá nhân, dễ làm bỏ sót các lưu ý quan trọng của nhóm trưởng.</p>
+                    <p><strong>Giải pháp công nghệ:</strong> Cấu hình bộ lọc thông báo thông minh: Ẩn/tắt chuông thông báo ở các kênh phụ không liên quan trên <strong>Teams</strong>, kết hợp bật chế độ phân loại tin nhắn ưu tiên (Ghim) trên <strong>Zalo</strong> để tập trung tối đa.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span>Thách thức 3: Trôi và thất lạc tài liệu học tập (Information Flooding)</span>
+                  <span class="accordion-icon">＋</span>
+                </button>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <p><strong>Thách thức:</strong> Luồng chat thảo luận bị lẫn lộn giữa tin nhắn trao đổi chung và việc gửi file, khiến tài liệu học tập trôi nhanh và cực kỳ mất thời gian tìm kiếm lại.</p>
+                    <p><strong>Giải pháp công nghệ:</strong> Tối ưu hóa kho lưu trữ đám mây: Định kỳ cuối ngày nhóm trưởng thu gom toàn bộ file về <strong>Google Drive</strong> dùng chung, phân loại bằng "Thẻ File" của nhóm Zalo, kết hợp tính năng Ghim các liên kết quan trọng để cả đội dễ dàng truy cập.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-trigger">
+                  <span>Thách thức 4: Bất đồng ý kiến về thuật ngữ song ngữ nhóm</span>
+                  <span class="accordion-icon">＋</span>
+                </button>
+                <div class="accordion-content">
+                  <div class="accordion-content-inner">
+                    <p><strong>Thách thức:</strong> Khi cùng dịch báo cáo, mỗi thành viên dùng các từ ngữ dịch khác nhau cho một thuật ngữ chuyên ngành (Ví dụ: người dịch "Self-study" thành "Tự học", người dịch thành "Tự nghiên cứu", người dịch thành "Tự đào tạo"), dẫn đến bài dịch tổng hợp bị chắp vá và thiếu nhất quán.</p>
+                    <p><strong>Giải pháp công nghệ:</strong> Đồng bộ thuật ngữ đám mây: Nhóm thiết lập một bảng <strong>Glossary (Thuật ngữ chung)</strong> dùng chung trên <strong>Google Sheets</strong>. Trước khi viết, cả nhóm thống nhất định nghĩa các từ khóa cốt lõi tại đây; trong quá trình viết, mọi người đối chiếu trực tiếp thời gian thực để đảm bảo toàn bộ tài liệu dịch thuật đồng nhất 100% văn phong.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== BÀI 5 ==================== -->
+          <div class="panel-container" id="assign-panel-5">
+            <div class="panel-header">
+              <span class="panel-tag">Sáng tạo nội dung với AI</span>
+              <h2 class="panel-title">Bài 5: Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung</h2>
+            </div>
+            
+            <a href="https://drive.google.com/drive/folders/1fdQJ01KVk9VO70laGBO4m7Bb3dwI3YPc?usp=sharing" class="btn-download-pdf btn-shimmer" target="_blank">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              Xem Thư Mục Báo Cáo & Bài Tập (Google Drive)
+            </a>
+            
+            <p class="panel-text">
+              <strong>Chiến dịch nội dung đa phương tiện:</strong> <span class="highlight-text">"AI và Tương lai Giáo dục Đại học: Cơ hội hay Thách thức cho Sinh viên VNU?"</span>.
+            </p>
+
+            <h3 class="panel-subtitle reveal">1. Quy trình ứng dụng AI tạo sinh và Tích hợp sáng tạo</h3>
+            <p class="panel-text">
+              Quá trình phối hợp công cụ AI và vai trò của con người trong từng công đoạn được ghi nhận trực quan qua các bước tương tác sau:
+            </p>
+            
+            <div class="prompt-deck reveal">
+              <div class="prompt-designer-card">
+                <div class="p-header-tag advanced">Bước 1: Khởi tạo ý tưởng (Gemini)</div>
+                <p class="panel-text" style="font-size:0.85rem; margin-top:8px; margin-bottom:12px;"><strong>Prompt:</strong> "Bạn là một chuyên gia thiết kế nội dung số. Hãy lập đề cương cho một Infographic có tên 'Roadmap làm chủ AI cho sinh viên VNU'. Nội dung gồm 4 bước: 1. Hiểu bản chất, 2. Thực hành Prompt, 3. Ứng dụng chuyên ngành, 4. Đạo đức học thuật. Viết ngắn gọn, súc tích kiểu bullet points."</p>
+                <p class="panel-text" style="font-size:0.8rem; margin:0; border-top:1px dashed var(--border-color); padding-top:10px; color:var(--text-muted); margin-top: auto;">
+                  <strong>Tinh chỉnh thực tế (Tường Anh):</strong> Bản địa hóa bằng cách đưa thêm các ví dụ thực tiễn về hoạt động nghiên cứu khoa học (NCKH), làm tiểu luận và tuân thủ quy chế liêm chính học thuật tại VNU.
+                </p>
+              </div>
+              
+              <div class="prompt-designer-card">
+                <div class="p-header-tag advanced">Bước 2: Tạo ảnh minh họa (DALL-E 3)</div>
+                <p class="panel-text" style="font-size:0.85rem; margin-top:8px; margin-bottom:12px;"><strong>Prompt:</strong> Tạo ảnh minh họa chính thể hiện một sinh viên VNU đang học tập trong không gian hiện đại với các yếu tố trực quan hóa dữ liệu AI.</p>
+                <div class="poster-preview-container" style="margin-bottom:12px; border-radius:16px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); height: 280px; width: 100%;">
+                  <img src="vnu_ai_project.jpg" alt="VNU AI Project Illustration" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <p class="panel-text" style="font-size:0.8rem; margin:0; border-top:1px dashed var(--border-color); padding-top:10px; color:var(--text-muted); margin-top: auto;">
+                  <strong>Tinh chỉnh thực tế (Tường Anh):</strong> AI đóng vai trò xuất ra hình ảnh thô. Sử dụng Canva để tách nền, phối hợp cùng các icon phẳng (Flat Design) và logo VNU để tạo sự đồng nhất.
+                </p>
+              </div>
+            </div>
+
+            <!-- Bước 3 -->
+            <div class="prompt-designer-card reveal" style="margin-bottom: 30px;">
+              <div class="p-header-tag advanced">Bước 3: Thiết kế, dàn trang và xử lý hậu kỳ (Canva)</div>
+              <p class="panel-text" style="margin-top: 8px;">
+                Sử dụng tính năng <strong>Canva Magic Media</strong> để tự động gợi ý và phối bộ màu sắc (Color Palette) hiện đại mang phong cách công nghệ: <em>Xanh Navy - Bạc - Xanh Mint</em>. Đồng thời dùng <strong>Magic Switch</strong> để chuyển đổi nhanh tài liệu thô dạng văn bản sang các khối nội dung đồ họa tự động trên khung slide.
+              </p>
+              <p class="panel-text" style="font-size:0.85rem; margin:0; border-top:1px dashed var(--border-color); padding-top:10px; color:var(--text-muted);">
+                <strong>Hiệu chỉnh thủ công (Human-in-the-loop):</strong> Do hệ thống AI thường bị lỗi font tiếng Việt hiển thị, tớ đã thay thế toàn bộ font lỗi bằng font Montserrat chỉn chu, đồng thời căn lề và tái cấu trúc lại các khối chữ bị quá dày để tối ưu tính trực quan.
+              </p>
+            </div>
+
+            <h3 class="panel-subtitle reveal">2. So sánh và Phân tích hiệu quả công cụ AI</h3>
+            <div class="matrix-wrapper reveal" style="margin-bottom: 30px;">
+              <table class="matrix-table">
+                <thead>
+                  <tr>
+                    <th>Tiêu chí</th>
+                    <th>AI Text (Google Gemini)</th>
+                    <th>AI Image (DALL-E 3)</th>
+                    <th>Canva (Thiết kế & Bố cục)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Điểm mạnh</strong></td>
+                    <td>Cập nhật dữ liệu thời gian thực cực tốt. Hiểu rõ ngữ cảnh địa phương và các thông tin liên quan đến VNU. Tốc độ sinh dàn ý nhanh.</td>
+                    <td>Trực quan hóa ý tưởng xuất sắc. Tạo ra hình ảnh minh họa độc quyền, sắc nét và mang đậm tính nghệ thuật tương lai.</td>
+                    <td>Cầu nối xuất sắc giúp hiện thực hóa layout. Phối màu nhanh chóng. Tự động dàn trang từ văn bản thô cực tiện lợi.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Điểm yếu</strong></td>
+                    <td>Hành văn đôi khi còn mang tính liệt kê, thiếu cảm xúc cá nhân. Dễ gặp lỗi "ảo giác AI" (bịa số liệu khảo sát học thuật).</td>
+                    <td>Gặp khó khăn khi xử lý chữ văn bản trực tiếp trên ảnh. Nhân vật và bối cảnh thường bị thiếu đi nét Việt.</td>
+                    <td>Các template tự động dễ bị rập khuôn, máy móc. Thường xuyên xảy ra lỗi font chữ tiếng Việt (lỗi hiển thị dấu).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Đóng góp (Tường Anh)</strong></td>
+                    <td>Đảm bảo liêm chính học thuật: Mình đọc lại và chỉnh sửa lời văn, nội dung theo ý tưởng và phong cách của mình. Viết lại các bước bám sát quy chế VNU.</td>
+                    <td>Định hướng prompt nghệ thuật. Đưa ảnh thô vào Canva để tách nền, xử lý hậu kỳ và phối hợp cùng các icon vector phẳng (Flat Design) để đồng nhất.</td>
+                    <td>Sửa lỗi font chữ thủ công hoàn toàn sang font Montserrat. Cắt giảm bớt text thừa, tái cấu trúc bố cục và chèn logo VNU để tăng nhận diện.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="panel-subtitle reveal">3. Sản phẩm sáng tạo cuối cùng của tớ</h3>
+            <div class="reveal" style="text-align: center; margin: 25px 0;">
+              <a href="https://docs.google.com/presentation/d/1GlzGD2EU5LUdLf3tzmCrCEM3cLt8cr5lRK3Mf0Wbt2Y/edit?slide=id.p10#slide=id.p10" target="_blank" class="form-submit-btn btn-shimmer" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: auto; padding: 12px 24px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                Xem Slides Thuyết Trình
+              </a>
+            </div>
+          </div>
+
+          <!-- ==================== BÀI 6 ==================== -->
+          <div class="panel-container" id="assign-panel-6">
+            <div class="panel-header">
+              <span class="panel-tag">Đạo đức & Trách nhiệm số</span>
+              <h2 class="panel-title">Bài 6: Sử dụng AI có trách nhiệm trong học tập và nghiên cứu</h2>
+            </div>
+            
+            <a href="https://drive.google.com/drive/folders/1fdQJ01KVk9VO70laGBO4m7Bb3dwI3YPc?usp=sharing" class="btn-download-pdf btn-shimmer" target="_blank">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              Xem Thư Mục Báo Cáo & Bài Tập (Google Drive)
+            </a>
+            
+            <p class="panel-text">
+              <strong>Chủ đề:</strong> Đánh giá đạo đức học thuật và Thiết lập bộ nguyên tắc cá nhân.
+            </p>
+
+            <h3 class="panel-subtitle reveal">1. Phản biện Chính sách và Ranh giới Liêm chính Học thuật tại VNU</h3>
+            <p class="panel-text reveal">
+              Là sinh viên Trường Đại học Ngoại ngữ - ĐHQGHN, mình đã tìm hiểu kỹ chính sách sử dụng AI của trường như sau:
+            </p>
+
+            <div class="prompt-deck reveal" style="margin-bottom: 25px;">
+              <div class="prompt-designer-card" style="border-left: 4px solid var(--color-sky-blue);">
+                <div class="p-header-tag basic">Chính sách của VNU</div>
+                <ul class="panel-ul-list" style="margin-top: 10px; font-size: 0.88rem;">
+                  <li>Khuyến khích ứng dụng có kiểm soát và định hướng đạo đức rõ ràng.</li>
+                  <li>Yêu cầu trích dẫn rõ ràng tên AI và vai trò cụ thể của công cụ trong bài báo cáo học thuật.</li>
+                  <li>Nghiêm cấm lạm dụng AI để tạo ra toàn bộ hoặc phần lớn sản phẩm học thuật rồi nộp dưới danh nghĩa cá nhân.</li>
+                </ul>
+              </div>
+              
+              <div class="prompt-designer-card" style="border-left: 4px solid var(--color-wedgwood);">
+                <div class="p-header-tag basic">Nhận định cá nhân</div>
+                <p class="panel-text" style="font-size:0.85rem; margin-top:10px; margin-bottom:0; line-height: 1.6;">
+                  Chính sách của VNU mang tính thực tiễn cao và rất linh hoạt. Thay vì cấm đoán một cách cực đoan – điều bất khả thi trong kỷ nguyên số, nhà trường đã lựa chọn giải pháp "định hướng và đồng hành". Quy định này vừa bảo vệ giá trị cốt lõi của giáo dục là tư duy độc lập, vừa giúp sinh viên VNU không bị tụt hậu về mặt năng lực công nghệ, sẵn sàng đáp ứng yêu cầu của thị trường lao động 4.0.
+                </p>
+              </div>
+            </div>
+
+            <h3 class="panel-subtitle reveal">2. Quá trình tương tác kỹ thuật (Prompts & Outputs)</h3>
+            <p class="panel-text">
+              Để hiện thực hóa việc ứng dụng AI có trách nhiệm, tớ lựa chọn thực hiện một nhiệm vụ học tập cụ thể: <strong>"Tổng hợp tài liệu và lập dàn ý cho bài luận nghiên cứu: Tác động của công cụ dịch thuật AI đối với động lực học kỹ năng Viết của sinh viên ngành Ngôn ngữ Anh"</strong>.
+            </p>
+
+            <div class="prompt-deck reveal" style="margin-bottom: 30px;">
+              <div class="prompt-designer-card">
+                <div class="p-header-tag advanced">Phiên tương tác 1: Lập cấu trúc dàn ý</div>
+                <p class="panel-text" style="font-size:0.85rem; margin-top:8px; margin-bottom:8px;"><strong>Prompt:</strong> "Bạn là một chuyên gia trong lĩnh vực giảng dạy tiếng Anh (TESOL). Hãy giúp tôi xây dựng một dàn ý chi tiết cho bài luận nghiên cứu dài 2.000 từ với đề tài: 'Tác động của công cụ dịch thuật AI đối với động lực học kỹ năng Viết của sinh viên ngành Ngôn ngữ Anh'. Dàn ý cần chuẩn cấu trúc học thuật gồm: Mở đầu, Nội dung chính (Thực trạng, Tác động tích cực, Thách thức tiêu cực), và Kết luận."</p>
+                <p class="panel-text" style="font-size:0.82rem; margin:0; border-top:1px dashed var(--border-color); padding-top:8px; color:var(--text-muted);">
+                  <strong>Đầu ra (Output) của AI:</strong> Cung cấp dàn ý gồm 3 chương logic: Chương 1 (Đặt vấn đề và Tổng quan tài liệu), Chương 2 (Phân tích đa chiều: Tiết kiệm thời gian vs. Nguy cơ lười tư duy, giảm vốn từ), Chương 3 (Đề xuất giải pháp kiểm soát) và Kết luận.
+                </p>
+              </div>
+              
+              <div class="prompt-designer-card">
+                <div class="p-header-tag advanced">Phiên tương tác 2: Gợi ý tài liệu tham khảo</div>
+                <p class="panel-text" style="font-size:0.85rem; margin-top:8px; margin-bottom:8px;"><strong>Prompt:</strong> "Dựa trên dàn ý trên, hãy gợi ý cho tôi 3 hướng luận điểm cốt lõi để phân tích sâu về việc sinh viên bị giảm sút động lực tự học viết khi quá phụ thuộc vào AI dịch thuật, và đề xuất cách cấu trúc các đoạn văn theo mô hình PEEL (Point, Explanation, Example, Link)."</p>
+                <p class="panel-text" style="font-size:0.82rem; margin:0; border-top:1px dashed var(--border-color); padding-top:8px; color:var(--text-muted);">
+                  <strong>Đầu ra (Output) của AI:</strong> Cung cấp 3 luận điểm: (1) Sự suy giảm tư duy ngôn ngữ độc lập, (2) Tâm lý ỷ lại vào công nghệ sửa lỗi tự động, (3) Hội chứng lười trau dồi ngữ pháp chuyên sâu; kèm theo khung xương PEEL chi tiết cho từng đoạn.
+                </p>
+              </div>
+            </div>
+
+            <h3 class="panel-subtitle reveal">3. Bộ nguyên tắc cá nhân về sử dụng AI có trách nhiệm (5 Nguyên tắc vàng)</h3>
+            <p class="panel-text">
+              Nhằm định hình hành vi và giữ vững đạo đức học thuật của bản thân trong suốt quá trình học tập tại ULIS, mình tự đặt ra 5 nguyên tắc vàng cốt lõi:
+            </p>
+
+            <ul class="panel-ol-list reveal">
+              <li data-step="1">
+                <strong>Tư duy là duy nhất, AI chỉ là trợ lý:</strong>
+                Tư duy phản biện, lập luận và kết luận cuối cùng của bài viết luôn luôn phải xuất phát từ não bộ của bản thân. Không bao giờ để AI suy nghĩ thay.
+              </li>
+              <li data-step="2">
+                <strong>Thẩm định là bắt buộc (Quy tắc "Hoài nghi khoa học"):</strong>
+                Tuyệt đối không tin tưởng 100% vào các số liệu hay trích dẫn do AI cung cấp. Mọi thông tin từ AI đều phải được đối chiếu, xác thực lại với các nguồn tài liệu chính thống (sách giáo khoa, bài báo Scopus/ISI) trước khi đưa vào bài.
+              </li>
+              <li data-step="3">
+                <strong>Minh bạch là đạo đức:</strong>
+                Thành thật khai báo và trích dẫn đầy đủ việc sử dụng AI ở mọi cấp độ (từ dịch thuật, lên ý tưởng đến chỉnh sửa cấu trúc) theo đúng quy chuẩn học thuật APA.
+              </li>
+              <li data-step="4">
+                <strong>Nói không với "Copy - Paste" nguyên bản:</strong>
+                Không bao giờ sao chép trực tiếp các đoạn văn dài do AI tạo ra để nộp bài. Mọi nội dung gợi ý từ AI phải được xử lý, diễn đạt lại bằng ngôn từ, văn phong và trải nghiệm cá nhân của bản thân.
+              </li>
+              <li data-step="5">
+                <strong>Nâng cao chứ không thay thế kỹ năng gốc:</strong>
+                Chỉ sử dụng AI khi bản thân đã có nền tảng kiến thức cơ bản về vấn đề đó. Dùng AI làm công cụ để tối ưu hóa hiệu suất, mở rộng góc nhìn chứ không dùng AI để né tránh việc học tập và rèn luyện kỹ năng gốc của một sinh viên ngôn ngữ.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. CONCLUSION SECTION -->
+    <section id="conclusion" class="page-section">
+      <div class="glass-card">
+        <h2 class="section-title">Trang Tổng kết Dự án</h2>
+        
+        <p class="panel-text">
+          Quá trình thiết lập và hoàn thiện Digital Portfolio này đã mang lại cho mình những trải nghiệm thực tế vô cùng quý giá về việc kết hợp công nghệ thông tin và trí tuệ nhân tạo vào ngành học Ngôn ngữ và Văn hóa Hàn Quốc của mình.
+        </p>
+
+        <div class="reflect-panel-grid reveal">
+          <div class="reflect-card">
+            <div class="reflect-card-img-container">
+              <img src="knowledge_concept.jpg" alt="Kiến thức tích lũy" class="reflect-card-img">
+            </div>
+            <h3 class="reflect-card-title">Kiến thức tích lũy</h3>
+            <p class="reflect-card-desc">
+              Hiểu rõ cách tổ chức tệp tin khoa học, cách viết prompt thông minh và biết phương pháp phân loại, đánh giá mức độ tin cậy của các tài liệu nghiên cứu học thuật trên môi trường số.
+            </p>
+          </div>
+          
+          <div class="reflect-card">
+            <div class="reflect-card-img-container">
+              <img src="skills_concept.jpg" alt="Kỹ năng phát triển" class="reflect-card-img">
+            </div>
+            <h3 class="reflect-card-title">Kỹ năng phát triển</h3>
+            <p class="reflect-card-desc">
+              Lần đầu tiên được tiếp cận quy trình xây dựng và chạy một trang web thực tế, hiểu cách hoạt động của Git/GitHub và cách tối ưu hóa trải nghiệm tương tác của người dùng trên web.
+            </p>
+          </div>
+          
+          <div class="reflect-card">
+            <div class="reflect-card-img-container">
+              <img src="pride_concept.jpg" alt="Mặt tâm đắc nhất" class="reflect-card-img">
+            </div>
+            <h3 class="reflect-card-title">Mặt tâm đắc nhất</h3>
+            <p class="reflect-card-desc">
+              Biết cách làm chủ AI như một người trợ lý đắc lực hỗ trợ dịch thuật tiếng Hàn, thiết kế ấn phẩm đồ họa sáng tạo nhưng vẫn giữ vững tinh thần đạo đức và liêm chính học thuật.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="panel-subtitle reveal">Định hướng tương lai</h3>
+        <p class="panel-text">
+          Trong tương lai, mình sẽ tiếp tục cập nhật trang Portfolio này để biến nó thành một hồ sơ năng lực (CV trực tuyến) chuyên nghiệp. Mình tin rằng sự kết hợp giữa kiến thức chuyên môn về Ngôn ngữ Hàn Quốc và tư duy làm chủ công nghệ số sẽ là một lợi thế cạnh tranh rất lớn giúp mình phát triển xa hơn trong sự nghiệp biên - phiên dịch và truyền thông số.
+        </p>
+      </div>
+    </section>
+
+    <!-- 4. CONTACT SECTION -->
+    <section id="contact" class="page-section">
+      <div class="glass-card form-panel">
+        <h2 class="section-title" style="text-align: center; margin-bottom:12px;">Liên hệ với Tường Anh</h2>
+        <p class="panel-text" style="text-align: center; margin-bottom: 25px;">
+          Nếu bạn có câu hỏi hoặc muốn trao đổi về dự án, hãy để lại thông tin theo biểu mẫu bên dưới hoặc gửi mail trực tiếp nhé!
+        </p>
+        
+        <div class="contact-info-row reveal" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 30px;">
+          <a href="mailto:tuonganh0310@gmail.com" class="contact-info-item" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--color-atlantic); font-weight: 700; font-size: 0.88rem; background: var(--bg-card-accent); padding: 10px 20px; border-radius: 14px; border: 1px solid var(--border-color); transition: var(--transition-smooth);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            tuonganh0310@gmail.com
+          </a>
+          <a href="mailto:taytawan881@gmail.com" class="contact-info-item" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--color-atlantic); font-weight: 700; font-size: 0.88rem; background: var(--bg-card-accent); padding: 10px 20px; border-radius: 14px; border: 1px solid var(--border-color); transition: var(--transition-smooth);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            taytawan881@gmail.com
+          </a>
+        </div>
+        
+        <form id="contactForm" class="reveal" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã gửi tin nhắn! Biểu mẫu này đang ở chế độ mô phỏng.');">
+          <div class="form-group-ui">
+            <label class="form-label-ui" for="cName">Họ và tên</label>
+            <input type="text" id="cName" class="form-input-ui" placeholder="Ví dụ: Nguyễn Văn A" required>
+          </div>
+          
+          <div class="form-group-ui">
+            <label class="form-label-ui" for="cEmail">Địa chỉ Email</label>
+            <input type="email" id="cEmail" class="form-input-ui" placeholder="name@example.com" required>
+          </div>
+          
+          <div class="form-group-ui">
+            <label class="form-label-ui" for="cMsg">Nội dung tin nhắn</label>
+            <textarea id="cMsg" class="form-input-ui" placeholder="Nhập tin nhắn của bạn..." required></textarea>
+          </div>
+          
+          <button type="submit" class="form-submit-btn btn-shimmer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+            Gửi thông tin liên hệ
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="app-footer-ui">
+    <div class="copy-text">
+      Dương Tường Anh &copy; 2026 &bull; MSV: 25042327 &bull; Khoa Ngôn ngữ và Văn hóa Hàn Quốc (ULIS)
+    </div>
+    <div class="footer-nav">
+      <a href="#" class="footer-nav-link" data-link="home">Giới thiệu</a>
+      <a href="#" class="footer-nav-link" data-link="assignments">Bài tập</a>
+      <a href="#" class="footer-nav-link" data-link="conclusion">Tổng kết</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
